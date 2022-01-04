@@ -1,0 +1,33 @@
+.holder {
+  margin: 0 auto;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bounce1, .bounce2, .bounce3 {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: bounceDelay 1.4s infinite ease-in-out both;
+}
+
+.bounce1 {
+  animation-delay: -0.32s;
+}
+
+.bounce2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounceDelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+    transform: scale(1.0);
+  }
+}

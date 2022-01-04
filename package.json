@@ -1,0 +1,43 @@
+{
+  "name": "trivia",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://duu-trivia.herokuapp.com/",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "cloudinary": "^1.19.0",
+    "firebase": "^7.22.1",
+    "gh-pages": "^2.2.0",
+    "is-image-url": "^1.1.8",
+    "jsonwebtoken": "^8.5.1",
+    "react": "^16.9.0",
+    "react-device-detect": "^1.9.10",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.3",
+    "react-textfit": "^1.1.0",
+    "react-tooltip": "^3.11.1",
+    "zipcelx": "^1.6.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+.input {
+  padding: 10px;
+  margin: 0;
+  line-height: 20px;
+  width: 100%;
+  font-size: 20px;
+  border-width: 3px;
+  border-color: rgba(255, 255, 255, 0.7);
+  border-style: solid;
+  border-radius: 6px;
+  background-color: #141e32;
+  color: #fff;
+  outline: none;
+}
+.input:focus,
+.input:hover {
+  border-color: #fff;
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}

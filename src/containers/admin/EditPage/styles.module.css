@@ -1,0 +1,258 @@
+.container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 6vw);
+  min-height: 90px;
+  margin: 3vh 3vw 2vh 3vw;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 52px;
+  flex-grow: 1;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  width: 590px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 45px;
+  margin: 10px;
+  border-width: 3px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 6px;
+  font-size: 24px;
+  color: #fff;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 200ms;
+}
+.button:hover {
+  transform: scale(0.95);
+}
+
+.buttonIcon {
+  font-size: 20px;
+  margin-right: 6px;
+}
+
+.buttonText {
+  margin-bottom: 5px;
+}
+
+.roundContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 6vw);
+  margin: 20px 3vw;
+}
+
+.round {
+  width: 30%;
+  border-width: 3px;
+  border-color: rgba(255, 255, 255, 0.7);
+  border-style: solid;
+  border-radius: 6px;
+  font-size: 28px;
+  line-height: 45px;
+  text-align: center;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #141e32;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+.round:hover {
+  transform: scale(0.96);
+  color: #fff;
+  border-color: #fff;
+}
+
+.selected {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-color: #fff;
+  color: #141e32;
+  font-weight: bold;
+}
+.selected:hover {
+  color: #141e32;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(100% - 6vw);
+  margin: 45px 3vw;
+}
+
+.questionNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 54px;
+  height: 100px;
+  width: 100px;
+  font-weight: bold;
+  color: #141e32;
+  background-color: #fff;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(100% - 115px - 130px);
+  height: 110px;
+  margin-left: 15px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inputText {
+  font-size: 26px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.centeredRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  margin: 10px 30px;
+}
+
+.pointsText {
+  font-size: 19px;
+  margin-top: 6px;
+}
+
+.imageButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 80px;
+  border-width: 3px;
+  border-color: rgba(255, 255, 255, 0.7);
+  border-style: solid;
+  border-radius: 6px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.7);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 200ms;
+}
+.imageButton:hover {
+  border-color:rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.imageIcon {
+  font-size: 40px;
+}
+
+.imageText {
+  font-size: 16px;
+  text-align: center;
+}
+
+.imageContainer {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  height: 100%;
+}
+
+.image {
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.deleteImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 20px;
+  width: 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  transition: 200ms;
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    font-size: 40px;
+  }
+  .buttonContainer {
+    flex-direction: column;
+    width: 180px;
+  }
+  .button {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .round {
+    font-size: 24px;
+  }
+  .questionContainer {
+    flex-direction: column;
+  }
+  .questionNum {
+    width: 90%;
+    margin: 0 auto 10px auto;
+    height: 40px;
+    font-size: 28px;
+  }
+  .inputsContainer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

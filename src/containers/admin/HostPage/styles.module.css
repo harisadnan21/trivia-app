@@ -1,0 +1,81 @@
+.container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.headerRow {
+  width: 100%;
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 20vh;
+  width: 20vh;
+}
+
+.headerText {
+  font-size: 5.5vw;
+  font-weight: bold;
+  margin-left: 4vw;
+}
+
+.instructText {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px 25px 15px 25px;
+  margin: 6vh auto;
+  border-width: 5px;
+  border-color: #fff;
+  border-style: dashed;
+  border-radius: 0px;
+  width: 57.5vw;
+  font-size: 3vw;
+}
+
+.teamsContainer {
+  width: 90%;
+  margin: 5vh 5% 3vh 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  border-width: 3px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 6px;
+  font-size: 30px;
+}
+
+.startButton {
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
+  font-size: 3vw;
+  opacity: 0.7;
+  user-select: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+.startButton:hover {
+  opacity: 1;
+  transform: scale(0.96);
+}
+
+.arrow {
+  margin-left: 1.5vw;
+  font-size: 2.5vw;
+}

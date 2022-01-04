@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+.excuseText {
+  font-size: 36px;
+  margin-top: 10px;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+}
+
+.noButton {
+  margin-top: 55px;
+  border-width: 3px;
+  border-color: rgba(255, 255, 255, 0.7);
+  border-style: solid;
+  border-radius: 6px;
+  width: 100px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  background-color: #141e32;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  transition: 200ms;
+}
+.noButton:hover {
+  font-weight: bold;
+  border-color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}

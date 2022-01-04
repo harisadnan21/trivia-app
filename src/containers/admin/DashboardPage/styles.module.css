@@ -1,0 +1,167 @@
+.container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 52px;
+  margin: 3vh 3vw 2vh 3vw;
+}
+
+.createContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 6vw - 46px);
+  min-height: 70px;
+  padding: 20px;
+  margin: 25px 3vw;
+  border-width: 3px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 8px 3px;
+  transition: 200ms;
+}
+.createContainer:hover,
+.createContainer:focus {
+  transform: scale(0.97);
+}
+
+.createIcon {
+  font-size: 40px;
+  background-color: #fff;
+  color: #141e32;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.createText {
+  font-size: 42px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin: 0px 20px 10px 20px;
+}
+
+.liveGameContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4vh auto;
+  width: 80%;
+}
+
+.liveGameButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 25px 15px 25px;
+  border-width: 5px;
+  border-color: #fff;
+  border-style: dashed;
+  border-radius: 0px;
+  width: 30%;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: 200ms;
+}
+.liveGameButton:hover,
+.liveGameButton:focus {
+  transform: scale(0.97);
+}
+
+.liveGameText {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.quizzesContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(100% - 6vw);
+  margin: 0 3vw 30px 3vw;
+}
+
+.quizHolder {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  margin: 15px;
+}
+
+.quizContainer {
+  display: block;
+  width: calc(100% - 20px - 6px);
+  min-height: 200px;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 6px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.quizButtonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.tooltip {
+  font-size: 15px;
+  padding: 6px 13px;
+}
+
+.quizButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 45px;
+  border-width: 3px;
+  border-color: #fff;
+  border-style: solid;
+  border-radius: 6px;
+  font-size: 24px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 200ms;
+}
+.quizButton:hover {
+  transform: scale(0.95);
+}
+
+@media only screen and (max-width: 600px) {
+  .createContainer {
+    width: calc(310px - 46px);
+    margin: 25px auto;
+  }
+  .liveGameContainer {
+    flex-direction: column;
+  }
+  .liveGameButton {
+    width: 100%;
+    margin: 1vh auto;
+  }
+}
